@@ -1,0 +1,16 @@
+#include <stdio.h>
+  int main()
+  {
+    float dinero;
+    float interes;
+    float ganancia;
+    float total;
+    printf("Ingrese el dinero y el interes mensual: \n");
+    scanf("%f" "%f", &dinero, &interes);
+    ganancia = dinero * (interes / 100.0);
+    total = ganancia + dinero;
+    printf("ganancia a fin de mes: %.4f\n", ganancia);
+    printf("total a final de mes: %.4f\n", total);
+
+    return 0;
+  }
