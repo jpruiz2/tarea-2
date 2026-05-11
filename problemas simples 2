@@ -1,0 +1,15 @@
+#include <stdio.h>
+  int main()
+  {
+    int r;
+    int area;
+    int perimetro;
+    printf("ingrese el radio del circulo:\n");
+    scanf("%d", &r);
+    area = r * r * 3.14;
+    perimetro = r * 3.14;
+    printf("el area es: %d\n", area);
+    printf("el perimetro es: %d\n", perimetro);
+
+    return 0;
+  }
