@@ -1,0 +1,12 @@
+#include <stdio.h>
+  int main()
+  {
+    int pesos;
+    int dolares;
+    printf("Ingrese una cantidad en dolares: \n");
+    scanf("%d", &dolares);
+    pesos = dolares * 11.96;
+    printf("equivale en pesos: %d\n", pesos);
+
+    return 0;
+  }
