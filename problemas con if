@@ -1,0 +1,14 @@
+#include <stdio.h>
+  int main()
+  {
+    float precio;
+    printf("ingresa el costo del producto: \n");
+    scanf("%f", &precio);
+    if(precio > 2500)
+    {
+      precio = precio * 0.92;
+    }
+    printf("el precio es: %.2f", precio);
+
+    return 0;
+  }
