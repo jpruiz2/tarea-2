@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+  {
+    float km;
+    float dias;
+    float precio;
+    printf("Ingresa la kilometros de ida y los dias de estancia: \n");
+    scanf("%f" "%f", &km, &dias);
+    km = km * 2;
+    precio = km * 0.23;
+    if (km > 800)
+    {
+      if (dias > 7)
+      {
+        precio = precio * 0.7;
+      }
+    }
+    printf("El precio del viaje es: %.2f\n", precio);
+
+    return 0;
+  }
