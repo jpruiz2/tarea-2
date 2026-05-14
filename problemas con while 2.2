@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int i, numero;
+    int positivos = 0, negativos = 0, nulos = 0;
+
+    srand(time(NULL));
+
+    for (i = 1; i <= 100; i++)
+    {
+        numero = rand() % 201 - 100;
+
+        printf("%d\n", numero);
+
+        if (numero > 0)
+        {
+            positivos++;
+        }
+        else if (numero < 0)
+        {
+            negativos++;
+        }
+        else
+        {
+            nulos++;
+        }
+    }
+
+    printf("\nNumeros positivos: %d\n", positivos);
+    printf("Numeros negativos: %d\n", negativos);
+    printf("Numeros nulos: %d\n", nulos);
+
+    return 0;
+}
