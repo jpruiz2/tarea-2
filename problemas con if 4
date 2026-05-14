@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+  int n1, n2;
+  printf("Ingresa dos numeros enteros y presiona enter \n");
+  scanf("%d" "%d", &n1, &n2);
+  if (n1 == 0 || n2 == 0)
+  {
+    printf("Ingrese valores diferentes a 0 \n");
+  }
+  else
+  {
+    if (n1 % n2 == 0)
+    {
+      printf("%d es divisible entre %d\n", n1, n2);
+    }
+    else if (n2 % n1 == 0)
+    {
+    printf("%d es divisible entre %d\n", n2, n1);
+    }
+    else 
+    printf("ninguno de los numeros es divisible entre si \n");
+  }
+  return 0;
+}
