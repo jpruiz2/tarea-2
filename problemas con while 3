@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+  int pares = 0, cont = 9, suma =0;
+  while (++cont <= 50)
+  {
+    if (cont % 2 == 0)
+    {
+      suma = suma + cont;
+      pares = pares + 1;
+    }
+  }
+  printf("la suma de todos los pares desde el 10 hasta el 50 es: %d\n", suma);
+  printf("     \n");
+  printf("hay un total de %d numeros pares entre esos numeros \n", pares);
+
+  return 0;
+}
